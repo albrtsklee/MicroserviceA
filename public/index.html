@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime CRUD App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Anime CRUD App</h1>
+
+    <div class="form-container">
+      <h2>Create Anime</h2>
+      <form id="anime-form">
+        <input type="text" id="anime-name" placeholder="Anime Name" required />
+        <input type="text" id="anime-genre" placeholder="Genre" />
+        <input type="number" id="anime-year" placeholder="Release Year" />
+        <textarea id="anime-description" placeholder="Description"></textarea>
+        <button type="submit">Add Anime</button>
+      </form>
+    </div>
+
+    <div class="form-container">
+      <h2>Add Rating</h2>
+      <form id="rating-form">
+        <input type="number" id="anime-id" placeholder="Anime ID" required />
+        <input type="number" id="anime-rating" placeholder="Rating (1-10)" required />
+        <button type="submit">Add Rating</button>
+      </form>
+    </div>
+
+    <div class="form-container">
+      <h2>Get Average Rating</h2>
+      <input type="number" id="average-anime-id" placeholder="Anime ID" />
+      <button id="get-average">Get Average Rating</button>
+      <p id="average-rating"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
